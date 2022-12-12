@@ -1,0 +1,38 @@
+{
+  "name": "ESP8266_W5500_Manager",
+  "version": "1.0.0",
+  "keywords": "ethernet, WiFiManager, esp8266, WebServer, Communication, Credentials, Config-Portal, DoubleReset, MultiReset, littlefs, spiffs, dns-server, iot, eeprom",
+  "description": "(ESP8266 + LwIP W5500) Connection and Credentials Manager, with enhanced GUI and fallback Web ConfigPortal. This Library is used for configuring (ESP8266 + LwIP W5500) Credentials Manager at runtime. You can also specify static DNS servers, personalized HostName, static or DHCP IP. With configurable CORS Header and auto-Timezone features",
+  "authors":
+  {
+    "name":  "Khoi Hoang",
+    "url":   "https://github.com/khoih-prog",
+    "maintainer": true
+  },
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/khoih-prog/ESP8266_W5500_Manager"
+  },
+  "homepage": "https://github.com/khoih-prog/ESP8266_W5500_Manager",
+  "export": {
+    "exclude": [
+      "linux",
+      "extras",
+      "tests"
+    ]
+  },
+  "dependencies": [
+    {
+      "owner": "khoih-prog",
+      "name": "ESP_DoubleResetDetector",
+      "version": ">=1.3.2",
+      "platforms": ["espressif8266"]
+    }
+  ],
+  "license": "MIT",
+  "frameworks": "*",
+  "platforms": ["espressif8266"],
+  "examples": "examples/*/*/*.ino",
+  "headers": ["ESP8266_W5500_Manager.h", "ESP8266_W5500_Manager.hpp"]
+}
