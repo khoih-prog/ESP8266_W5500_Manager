@@ -788,7 +788,7 @@ void setup()
 
   digitalWrite(LED_BUILTIN, LED_ON);
 
-  //Local intialization. Once its business is done, there is no need to keep it around
+  //Local initialization. Once its business is done, there is no need to keep it around
   // Use this to default DHCP hostname to ESP8266-XXXXXX
   //ESP8266_W5500_Manager ESP8266_W5500_manager(&webServer, &dnsServer);
   // Use this to personalize DHCP hostname (RFC952 conformed)
